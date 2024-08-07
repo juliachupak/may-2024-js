@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #292929;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    line-height: 1.4;
+    font-family: sans-serif;
+}
+
+body > div {
+    display: none;
+}
+
+header {
+    width: 240px;
+    height: 100%;
+    flex-shrink: 0;
+    padding-top: 64px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+h1 {
+    background-color: gold;
+    font-size: 120px;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    margin: 0 auto 64px;
+    align-items: center;
+    justify-content: center;
+    transform-origin: center;
+    transform: rotate(-3deg);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 13px;
+}
+nav a {
+    display: inline-flex;
+    align-items: center;
+    height: 36px;
+    padding: 0 26px 0 12px;
+    text-decoration: none;
+    color: #f3f5f7;
+    border-radius: 6px 0 0 6px;
+    will-change: padding, background-color;
+    transition: background-color .3s, padding .3s;
+}
+nav .active,
+nav a:hover {
+    background-color: #000;
+    padding-right: 12px;
+}
+
+
+main {
+    width: calc(100% - 240px);
+    background-color: #f3f5f7;
+    border-left: 24px solid #000;
+    border-right: 24px solid #000;
+}
+main::before {
+    content: '';
+    display: block;
+    height: 24px;
+    position: sticky;
+    top: 0;
+    left: 240px;
+    right: 0;
+    background-color: #000;
+    z-index: 3;
+}
+
+
+footer {
+    font-size: 11px;
+    color: #f3f5f7;
+    height: 64px;
+    width: 100%;
+    line-height: 40px;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    text-align: right;
+    margin-left: 240px;
+    padding: 0 20px;
+    border-top: 24px solid #000;
+    background-color: #292929;
+}
+footer b {
+    color: gold;
+}
+
+
+section {
+    padding: 48px 24px 24px;
+    min-height: calc(100vh - 64px);
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px 0;
+}
+section:first-child {
+    margin-top: -24px;
+}
+
+
+pre {
+    box-shadow: 0 0 0 1px #dbdada;
+    height: 100%;
+    width: 100%;
+    padding: 12px;
+    font-size: 12px;
+    white-space: pre-wrap;
+    font-family: 'Courier New', Courier, monospace;
+}
+pre:empty {
+    display: none;
+}
