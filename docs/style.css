@@ -63,10 +63,18 @@ nav a {
     will-change: padding, background-color;
     transition: background-color .3s, padding .3s;
 }
-nav .active,
+
+
 nav a:hover {
     background-color: #000;
     padding-right: 12px;
+}
+nav .active {
+    background-color: #000;
+    padding: 0 26px 0 26px;
+}
+nav .active:hover {
+    padding: 0 26px 0 26px;
 }
 
 
@@ -112,7 +120,6 @@ footer b {
 section {
     padding: 48px 24px 24px;
     min-height: calc(100vh - 64px);
-    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     gap: 12px 0;
@@ -126,8 +133,8 @@ pre {
     box-shadow: 0 0 0 1px #dbdada;
     height: 100%;
     width: 100%;
-    padding: 12px;
-    font-size: 12px;
+    padding: 16px;
+    font-size: 16px;
     white-space: pre-wrap;
     font-family: 'Courier New', Courier, monospace;
 }

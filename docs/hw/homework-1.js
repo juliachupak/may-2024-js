@@ -1,10 +1,13 @@
-console.warn('Homework 1');
+// console.warn('Homework 1');
+console.group('Homework 1');
 
-// Task 1
+console.group('Task 1');
+
 const helloString = 'hello';
 const owuString = 'owu';
 const comString = 'com';
 const uaString = 'ua';
+
 console.log(`${helloString}, ${owuString}, ${comString}, ${uaString}`);
 
 const num1 = 1;
@@ -20,9 +23,12 @@ const bool1 = true;
 const bool2 = false;
 console.log(bool1, bool2);
 
+console.groupEnd();
 
 
-// Task 2
+
+console.group('Task 2');
+
 let firstName, middleName, lastName;
 firstName = 'John';
 middleName = 'Junior';
@@ -30,9 +36,12 @@ lastName = 'Doe';
 const person = firstName + ' ' + middleName + ' ' + lastName;
 console.log(person);
 
+console.groupEnd();
 
 
-// Task 3
+
+console.group('Task 3');
+
 let a = 100;
 let b = '100';
 let c = true;
@@ -40,5 +49,8 @@ console.log('type for a ->', typeof a);
 console.log('type for b ->', typeof b);
 console.log('type for c ->', typeof c);
 
+console.groupEnd();
+
+console.groupEnd();
 
 
