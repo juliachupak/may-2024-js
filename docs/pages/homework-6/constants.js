@@ -33,7 +33,7 @@ const SUIT = {
     HEARTS: 'hearts',
     DIAMONDS: 'diamonds',
     CLUBS: 'clubs',
-    SPADES: 'spades'
+    SPADES: 'spades',
 }
 
 const PLAYING_CARD_DECK = [
